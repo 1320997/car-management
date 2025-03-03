@@ -1,0 +1,18 @@
+current directory: /Users/sackle/practice/car-management/vendor/bundle/ruby/3.4.0/gems/websocket-driver-0.7.7/ext/websocket-driver
+/usr/local/Cellar/rbenv/1.3.2/versions/3.4.2/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/sackle/practice/car-management/vendor/bundle/ruby/3.4.0/gems/websocket-driver-0.7.7/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20250303-75172-45862k sitelibdir\=./.gem.20250303-75172-45862k clean
+
+current directory: /Users/sackle/practice/car-management/vendor/bundle/ruby/3.4.0/gems/websocket-driver-0.7.7/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20250303-75172-45862k sitelibdir\=./.gem.20250303-75172-45862k
+compiling websocket_mask.c
+linking shared-object websocket_mask.bundle
+
+current directory: /Users/sackle/practice/car-management/vendor/bundle/ruby/3.4.0/gems/websocket-driver-0.7.7/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20250303-75172-45862k sitelibdir\=./.gem.20250303-75172-45862k install
+/usr/bin/install -c -m 0755 websocket_mask.bundle ./.gem.20250303-75172-45862k
+
+current directory: /Users/sackle/practice/car-management/vendor/bundle/ruby/3.4.0/gems/websocket-driver-0.7.7/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20250303-75172-45862k sitelibdir\=./.gem.20250303-75172-45862k clean

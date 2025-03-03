@@ -1,0 +1,26 @@
+current directory: /Users/sackle/practice/car-management/vendor/bundle/ruby/3.2.0/gems/date-3.4.1/ext/date
+/Users/sackle/.rbenv/versions/3.2.5/bin/ruby extconf.rb
+checking for rb_category_warn()... no
+checking for timezone in time.h with  -Werror... yes
+checking for altzone in time.h with  -Werror... no
+creating Makefile
+
+current directory: /Users/sackle/practice/car-management/vendor/bundle/ruby/3.2.0/gems/date-3.4.1/ext/date
+make DESTDIR\= sitearchdir\=./.gem.20250303-40627-qopfzw sitelibdir\=./.gem.20250303-40627-qopfzw clean
+
+current directory: /Users/sackle/practice/car-management/vendor/bundle/ruby/3.2.0/gems/date-3.4.1/ext/date
+make DESTDIR\= sitearchdir\=./.gem.20250303-40627-qopfzw sitelibdir\=./.gem.20250303-40627-qopfzw
+compiling date_core.c
+compiling date_parse.c
+compiling date_strftime.c
+compiling date_strptime.c
+linking shared-object date_core.bundle
+ld: warning: ignoring duplicate libraries: '-lruby.3.2'
+ld: warning: ignoring file '/Users/sackle/.rbenv/versions/3.2.5/lib/libruby.3.2.dylib': found architecture 'arm64', required architecture 'x86_64'
+
+current directory: /Users/sackle/practice/car-management/vendor/bundle/ruby/3.2.0/gems/date-3.4.1/ext/date
+make DESTDIR\= sitearchdir\=./.gem.20250303-40627-qopfzw sitelibdir\=./.gem.20250303-40627-qopfzw install
+/usr/bin/install -c -m 0755 date_core.bundle ./.gem.20250303-40627-qopfzw
+
+current directory: /Users/sackle/practice/car-management/vendor/bundle/ruby/3.2.0/gems/date-3.4.1/ext/date
+make DESTDIR\= sitearchdir\=./.gem.20250303-40627-qopfzw sitelibdir\=./.gem.20250303-40627-qopfzw clean

@@ -1,0 +1,20 @@
+current directory: /Users/sackle/practice/car-management/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+/Users/sackle/.rbenv/versions/3.2.5/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/sackle/practice/car-management/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250303-40627-gtitk sitelibdir\=./.gem.20250303-40627-gtitk clean
+
+current directory: /Users/sackle/practice/car-management/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250303-40627-gtitk sitelibdir\=./.gem.20250303-40627-gtitk
+compiling cparse.c
+linking shared-object racc/cparse.bundle
+ld: warning: ignoring duplicate libraries: '-lruby.3.2'
+ld: warning: ignoring file '/Users/sackle/.rbenv/versions/3.2.5/lib/libruby.3.2.dylib': found architecture 'arm64', required architecture 'x86_64'
+
+current directory: /Users/sackle/practice/car-management/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250303-40627-gtitk sitelibdir\=./.gem.20250303-40627-gtitk install
+/usr/bin/install -c -m 0755 cparse.bundle ./.gem.20250303-40627-gtitk/racc
+
+current directory: /Users/sackle/practice/car-management/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250303-40627-gtitk sitelibdir\=./.gem.20250303-40627-gtitk clean

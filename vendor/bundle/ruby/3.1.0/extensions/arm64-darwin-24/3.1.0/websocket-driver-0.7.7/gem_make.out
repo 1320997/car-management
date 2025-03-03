@@ -1,0 +1,19 @@
+current directory: /Users/sackle/practice/car-management/vendor/bundle/ruby/3.1.0/gems/websocket-driver-0.7.7/ext/websocket-driver
+/opt/homebrew/Cellar/rbenv/1.3.2/versions/3.1.6/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/sackle/practice/car-management/vendor/bundle/ruby/3.1.0/gems/websocket-driver-0.7.7/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20250303-34812-57t84z sitelibdir\=./.gem.20250303-34812-57t84z clean
+
+current directory: /Users/sackle/practice/car-management/vendor/bundle/ruby/3.1.0/gems/websocket-driver-0.7.7/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20250303-34812-57t84z sitelibdir\=./.gem.20250303-34812-57t84z
+compiling websocket_mask.c
+linking shared-object websocket_mask.bundle
+ld: warning: ignoring duplicate libraries: '-lruby.3.1'
+
+current directory: /Users/sackle/practice/car-management/vendor/bundle/ruby/3.1.0/gems/websocket-driver-0.7.7/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20250303-34812-57t84z sitelibdir\=./.gem.20250303-34812-57t84z install
+/usr/bin/install -c -m 0755 websocket_mask.bundle ./.gem.20250303-34812-57t84z
+
+current directory: /Users/sackle/practice/car-management/vendor/bundle/ruby/3.1.0/gems/websocket-driver-0.7.7/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20250303-34812-57t84z sitelibdir\=./.gem.20250303-34812-57t84z clean
