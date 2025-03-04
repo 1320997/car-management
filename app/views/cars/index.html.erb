@@ -1,0 +1,9 @@
+<h1>車種管理画面</h1>
+<div>
+    <% @cars.each do |model| %>
+        <p>メーカー: <%= model.car_maker.name %></p>
+        <p>車種: <%= model.name %></p>
+        <p>販売開始年月: <%= model.sales_start_date %></p>
+        <p>メモ: <%= model.memo %></p>
+    <% end %>
+</div>
