@@ -11,4 +11,6 @@ Rails.application.routes.draw do
 
   # resources :cars, only: [:index]
   resources :cars
+
+  get 'sales_management/index', to: 'sales_management#index', as: 'sales_management'
 end

@@ -1,0 +1,10 @@
+<h1>車種販売管理</h1>
+<div>
+    <% @available_cars.each do |car| %>
+        <p>メーカー: <%= car.car_maker.name %></p>
+        <p>車種: <%= car.name %></p>
+        <p>販売開始年月: <%= car.sales_start_date.strftime('%Y-%m') %></p>
+        <p>メモ: <%= car.memo %></p>
+    <% end %>
+</div>
+<%= link_to "Back to cars", cars_path %>
