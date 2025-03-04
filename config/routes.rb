@@ -4,9 +4,11 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root "car_makers#index"
 
-  resources :car_makers do
-    resources :cars, shallow: true
-  end
+  resources :car_makers
+  # resources :car_makers do
+  #   resources :cars, shallow: true
+  # end
 
-  resources :cars, only: [:index]
+  # resources :cars, only: [:index]
+  resources :cars
 end

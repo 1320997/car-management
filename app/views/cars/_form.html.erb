@@ -1,0 +1,21 @@
+<%= form_with(model: @car) do |form| %>
+    <div>
+        <%= form.label :car_maker_id, "メーカー" %>
+        <%= form.collection_select :car_maker_id, CarMaker.all, :id, :name %>
+    </div>
+    <div>
+        <%= form.label :name %>
+        <%= form.text_field :name %>
+    </div>
+    <div>
+        <%= form.label :sales_start_date, "販売開始年月" %>
+        <%= form.date_select :sales_start_date %>
+    </div>
+    <div>
+        <%= form.label :memo %>
+        <%= form.text_area :memo %>
+    </div>
+    <div>
+        <%= form.submit %>
+    </div>
+<% end %>
