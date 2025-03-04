@@ -7,11 +7,11 @@
         <%= form.label :name %>
         <%= form.text_field :name %>
     </div>
-    <div>
-        <%= form.label :sales_start_date, "販売開始年月" %>
-        <%= form.date_select :sales_start_date %>
-    </div>
     <% if edit %>
+        <div>
+            <%= form.label :sales_start_date, "販売開始年月" %>
+            <%= form.select :sales_start_date, sales_date_options %>
+        </div>
         <div>
             <%= form.label :memo %>
             <%= form.text_area :memo %>
