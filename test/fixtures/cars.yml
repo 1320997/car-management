@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  car_maker: one
+  sales_start_date: 2025-03-04
+  memo: MyText
+
+two:
+  name: MyString
+  car_maker: two
+  sales_start_date: 2025-03-04
+  memo: MyText
