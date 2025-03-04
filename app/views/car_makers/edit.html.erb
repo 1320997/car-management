@@ -1,0 +1,7 @@
+<h1>Edit car maker</h1>
+<%= form_with(model: @car_maker) do |form| %>
+    <div><%= form.label :name %></div>
+    <div><%= form.text_area :name %></div>
+    <div><%= form.submit %></div>
+<% end %>
+<%= link_to "Back to car makers", car_makers_path %>

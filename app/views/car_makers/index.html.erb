@@ -1,7 +1,11 @@
 <h1>車両メーカー管理画面</h1>
 <div>
     <% @car_makers.each do |make| %>
-        <p>Make: <%= make.name %></p>
+        <div style="display: flex;">
+            <div style="width: 200px;">Make: <%= make.name %></div>
+            <div><%= button_to "edit", edit_car_maker_path(make), method: :get %></div>
+            <div><%= button_to "delete", car_maker_path(make), method: :delete %></div>
+        </div>
     <% end %>
 </div>
 <%= link_to "Add car maker", new_car_maker_path %>
