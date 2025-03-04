@@ -1,4 +1,16 @@
 <h1>車種販売管理</h1>
+
+<%= form_with url: sales_management_path, method: :get, local: true do |form| %>
+    <div>
+        <%= form.label :selected_date, "販売可能年月" %>
+        <%= form.select :selected_date, options_for_select(sales_date_options), prompt: "販売可能年月を選択" %>
+        <%= form.label :selected_date, "に販売可能な車両" %>
+    </div>
+    <div>
+        <%= form.submit "フィルターする" %>
+    </div>
+<% end %>
+
 <div>
     <% @available_cars.each do |car| %>
         <p>メーカー: <%= car.car_maker.name %></p>
