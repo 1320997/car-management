@@ -11,14 +11,16 @@
         <%= form.label :sales_start_date, "販売開始年月" %>
         <%= form.date_select :sales_start_date %>
     </div>
-    <div>
-        <%= form.label :memo %>
-        <%= form.text_area :memo %>
-    </div>
+    <% if edit %>
+        <div>
+            <%= form.label :memo %>
+            <%= form.text_area :memo %>
+        </div>
+    <% end %>
     <div>
         <%= form.submit %>
     </div>
-    <% if show_timestamps %>
+    <% if edit %>
         <div>
             <p>登録日時: <%= car.created_at.strftime("%Y-%m-%d %H:%M:%S") %></p>
             <p>編集日時: <%= car.updated_at.strftime("%Y-%m-%d %H:%M:%S") %></p>

@@ -2,7 +2,7 @@
     <div><%= form.label :name %></div>
     <div><%= form.text_area :name %></div>
     <div><%= form.submit %></div>
-    <% if show_timestamps %>
+    <% if edit %>
         <div>
             <p>登録日時: <%= car.created_at.strftime("%Y-%m-%d %H:%M:%S") %></p>
             <p>編集日時: <%= car.updated_at.strftime("%Y-%m-%d %H:%M:%S") %></p>
