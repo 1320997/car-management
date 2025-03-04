@@ -1,4 +1,6 @@
 class CarMakersController < ApplicationController
+    before_action :set_car_maker, only: %i[edit update destroy]
+
     # CarMaker 一覧画面表示
     def index
         @car_makers = CarMaker.all
@@ -19,12 +21,10 @@ class CarMakersController < ApplicationController
 
     # CarMaker 編集画面表示
     def edit
-        @car_maker = CarMaker.find(params[:id])
     end
 
     # CarMaker 更新処理
     def update
-        @car_maker = CarMaker.find(params[:id])
         if @car_maker.update(car_maker_params)
             redirect_to car_makers_path
         end
@@ -32,7 +32,6 @@ class CarMakersController < ApplicationController
 
     # CarMaker 削除処理
     def destroy
-        @car_maker = CarMaker.find(params[:id])
         @car_maker.destroy
         redirect_to car_makers_path
     end
@@ -42,5 +41,10 @@ class CarMakersController < ApplicationController
     # permitで指定した項目を許可する
     def car_maker_params
         params.require(:car_maker).permit(:name)
+    end
+
+    # id指定でtaskを検索して設定
+    def set_car_maker
+        @car_maker = CarMaker.find(params[:id])
     end
 end

@@ -1,0 +1,5 @@
+<%= form_with(model: @car_maker) do |form| %>
+    <div><%= form.label :name %></div>
+    <div><%= form.text_area :name %></div>
+    <div><%= form.submit %></div>
+<% end %>
