@@ -1,11 +1,12 @@
 <h1>車両メーカー管理画面</h1>
+<div><%= link_to "車種管理画面へ", cars_path %></div><br>
+<div><%= link_to "車両メーカー登録", new_car_maker_path %></div>
 <div>
     <% @car_makers.each do |make| %>
-        <div style="display: flex;">
-            <div style="width: 200px;">Make: <%= make.name %></div>
-            <div><%= button_to "edit", edit_car_maker_path(make), method: :get %></div>
-            <div><%= button_to "delete", car_maker_path(make), method: :delete %></div>
-        </div>
+        <p style="display: flex;">
+            <div style="width: 200px;">メーカー名: <%= make.name %></div>
+            <div><%= button_to "このメーカーを編集", edit_car_maker_path(make), method: :get %></div>
+            <div><%= button_to "このメーカーを削除", car_maker_path(make), method: :delete %></div>
+        </p>
     <% end %>
 </div>
-<%= link_to "Add car maker", new_car_maker_path %>

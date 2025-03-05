@@ -1,5 +1,5 @@
-<h1>車種販売管理</h1>
-
+<h1>車種販売管理画面</h1>
+<div><%= link_to "車種管理画面へ戻る", cars_path %></div><br>
 <%= form_with url: sales_management_path, method: :get, local: true do |form| %>
     <div>
         <%= form.label :selected_date, "販売可能年月" %>
@@ -16,7 +16,6 @@
         <p>メーカー: <%= car.car_maker.name %></p>
         <p>車種: <%= car.name %></p>
         <p>販売開始年月: <%= car.sales_start_date.strftime('%Y-%m') %></p>
-        <p>メモ: <%= car.memo %></p>
+        <p>メモ: <%= car.memo %></p><br>
     <% end %>
 </div>
-<%= link_to "Back to cars", cars_path %>
